@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>鑷姩楂樺害</title>
+        <meta chatset="utf-8">
+        <link rel="stylesheet" href="swiper.min.css">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background:#eee;
+            }
+            .swiper-contaion{
+                width:100%;
+                height:auto;
+            }
+            .swiper-slide{
+                text-align:center;
+            }
+            .swiper-container .swiper-slide{
+                height:300px;
+                line-height:300px;
+            }
+            .swiper-container .swiper-slide:nth-child(2n){
+                height:500px;
+                line-height:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">H5EDU 1<img src="logo.png"></div>
+                <div class="swiper-slide">H5EDU 2<img src="logo.png"></div>
+                <div class="swiper-slide">H5EDU 3<img src="logo.png"></div>
+                <div class="swiper-slide">H5EDU 4<img src="logo.png"></div>
+                <div class="swiper-slide">H5EDU 5<img src="logo.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <script src="swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container',{
+                pagination:'.swiper-pagination',
+                nextButton:'.swiper-button-next',
+                prevButton:'.swiper-button-prev',
+                paginationClickable:true,
+                autoHeight:true
+            });
+        </script>
+    </body>
+</html>

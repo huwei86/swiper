@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>3D</title>
+        <meta chatset="utf-8">
+        <link rel="stylesheet" href="swiper.min.css">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+            .swiper-container{
+                width:100%;
+                padding-top:50px;
+                padding-bottom:50px;
+            }
+            .swiper-slide{
+                background-position:center;
+                background-size:cover;
+                width:300px;
+                height:300px;
+                display:flex;
+                text-align:center;
+                justify-content:center;
+                align-items:center;
+                background:#eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="logo.png"></div>
+                <div class="swiper-slide" style="background-image:url(img/4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/5.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(img/6.jpg)"></div>
+                <div class="swiper-slide"><img src="logo.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container',{
+                pagination:'.swiper-pagination',
+                grabCursor:true,
+                centeredSlides:true,
+                slidesPerView:'auto',
+                effect:'coverflow',
+                coverflow:{
+                    rotate:50,
+                    stretch:0,
+                    depth:100,
+                    modifier:1,
+                    slideShadows:true
+                }
+            });
+        </script>
+    </body>
+</html>
